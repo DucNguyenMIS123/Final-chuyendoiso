@@ -2,9 +2,14 @@
 
 <div class="container-fluid vh-100 d-flex flex-column overflow-hidden">
     <!-- Navbar -->
+    <?php
+    $role = $_GET['role'] ?? 'doctor'; // Default to doctor if not set
+    $redirect_url = ($role === 'patient') ? 'patient_dashboard.php' : 'doctor_dashboard.php';
+    ?>
     <nav class="navbar navbar-light bg-white border-bottom px-4 flex-shrink-0">
         <div class="d-flex align-items-center">
-            <a href="doctor_dashboard.php" class="btn btn-light me-3"><i class="fa-solid fa-arrow-left"></i> Exit</a>
+            <a href="<?php echo $redirect_url; ?>" class="btn btn-light me-3"><i class="fa-solid fa-arrow-left"></i>
+                Exit</a>
             <span class="badge bg-danger animate-pulse me-2">● LIVE</span>
             <span class="fw-bold">Consultation with Vo Van Na (Patient)</span>
         </div>
@@ -34,7 +39,7 @@
             <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4 d-flex gap-3">
                 <button class="btn btn-secondary rounded-circle p-3"><i class="fa-solid fa-microphone"></i></button>
                 <button class="btn btn-secondary rounded-circle p-3"><i class="fa-solid fa-video"></i></button>
-                <a href="doctor_dashboard.php" class="btn btn-danger rounded-circle p-3 px-4"><i
+                <a href="<?php echo $redirect_url; ?>" class="btn btn-danger rounded-circle p-3 px-4"><i
                         class="fa-solid fa-phone-slash"></i></a>
             </div>
         </div>

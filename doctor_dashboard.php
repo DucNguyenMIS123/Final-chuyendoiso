@@ -7,16 +7,17 @@
 
         <!-- Main Content -->
         <div class="col-md-10 p-4 bg-light">
-            
+
             <!-- Top Section: Header & Risk Cards -->
             <div class="row mb-5">
                 <div class="col-12 mb-4">
                     <h2 class="section-title">AI-Driven Patient Risk Overview</h2>
                 </div>
-                
+
                 <!-- Risk Cards -->
                 <div class="col-md-4">
-                    <div class="card risk-card p-4 border-start border-5" style="border-color: var(--risk-high) !important;">
+                    <div class="card risk-card p-4 border-start border-5"
+                        style="border-color: var(--risk-high) !important;">
                         <div class="d-flex justify-content-between align-items-start">
                             <div>
                                 <h6 class="text-uppercase text-muted fw-bold small">High Risk</h6>
@@ -27,14 +28,16 @@
                             </div>
                         </div>
                         <div class="mt-3">
-                            <span class="badge bg-danger bg-opacity-10 text-danger"><i class="fa-solid fa-arrow-up"></i> +2 today</span>
+                            <span class="badge bg-danger bg-opacity-10 text-danger"><i class="fa-solid fa-arrow-up"></i>
+                                +2 today</span>
                             <small class="text-muted ms-2">Monitor closely</small>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card risk-card p-4 border-start border-5" style="border-color: var(--risk-med) !important;">
+                    <div class="card risk-card p-4 border-start border-5"
+                        style="border-color: var(--risk-med) !important;">
                         <div class="d-flex justify-content-between align-items-start">
                             <div>
                                 <h6 class="text-uppercase text-muted fw-bold small">Moderate Risk</h6>
@@ -45,14 +48,16 @@
                             </div>
                         </div>
                         <div class="mt-3">
-                            <span class="badge bg-warning bg-opacity-10 text-warning"><i class="fa-solid fa-minus"></i> Stable</span>
+                            <span class="badge bg-warning bg-opacity-10 text-warning"><i class="fa-solid fa-minus"></i>
+                                Stable</span>
                             <small class="text-muted ms-2">Review medication</small>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card risk-card p-4 border-start border-5" style="border-color: var(--risk-low) !important;">
+                    <div class="card risk-card p-4 border-start border-5"
+                        style="border-color: var(--risk-low) !important;">
                         <div class="d-flex justify-content-between align-items-start">
                             <div>
                                 <h6 class="text-uppercase text-muted fw-bold small">Stable / Low</h6>
@@ -63,7 +68,8 @@
                             </div>
                         </div>
                         <div class="mt-3">
-                            <span class="badge bg-success bg-opacity-10 text-success"><i class="fa-solid fa-check"></i> On track</span>
+                            <span class="badge bg-success bg-opacity-10 text-success"><i class="fa-solid fa-check"></i>
+                                On track</span>
                             <small class="text-muted ms-2">Standard checkups</small>
                         </div>
                     </div>
@@ -73,17 +79,18 @@
             <div class="row">
                 <!-- Left Column: Patient Table & Analytics (65%) -->
                 <div class="col-lg-8">
-                    
+
                     <!-- Real-time Patient Data -->
                     <div class="card p-4 mb-4">
                         <div class="d-flex justify-content-between align-items-center mb-4">
                             <h4 class="mb-0 fw-bold">Real-time Patient Data</h4>
                             <div class="input-group w-auto">
-                                <span class="input-group-text bg-white border-end-0"><i class="fa-solid fa-search text-muted"></i></span>
+                                <span class="input-group-text bg-white border-end-0"><i
+                                        class="fa-solid fa-search text-muted"></i></span>
                                 <input type="text" class="form-control border-start-0 ps-0" placeholder="Search...">
                             </div>
                         </div>
-                        
+
                         <div class="table-responsive">
                             <table class="table table-vitals table-hover hover-shadow">
                                 <thead>
@@ -101,7 +108,8 @@
                                     <tr onclick="window.location='consultation.php'" style="cursor: pointer;">
                                         <td>
                                             <div class="d-flex align-items-center">
-                                                <div class="avatar-circle me-3" style="background: var(--risk-high);">VN</div>
+                                                <div class="avatar-circle me-3" style="background: var(--risk-high);">VN
+                                                </div>
                                                 <div>
                                                     <div class="fw-bold">Vo Van Na</div>
                                                     <small class="text-danger fw-bold">High Risk</small>
@@ -118,7 +126,8 @@
                                     <tr>
                                         <td>
                                             <div class="d-flex align-items-center">
-                                                <div class="avatar-circle me-3" style="background: var(--risk-med);">TL</div>
+                                                <div class="avatar-circle me-3" style="background: var(--risk-med);">TL
+                                                </div>
                                                 <div>
                                                     <div class="fw-bold">Tran Thi Le</div>
                                                     <small class="text-warning fw-bold">Moderate</small>
@@ -135,7 +144,8 @@
                                     <tr>
                                         <td>
                                             <div class="d-flex align-items-center">
-                                                <div class="avatar-circle me-3" style="background: var(--risk-low);">NM</div>
+                                                <div class="avatar-circle me-3" style="background: var(--risk-low);">NM
+                                                </div>
                                                 <div>
                                                     <div class="fw-bold">Nguyen Minh</div>
                                                     <small class="text-success fw-bold">Stable</small>
@@ -148,8 +158,8 @@
                                         <td>105</td>
                                         <td width="120"><canvas id="spark3" height="30"></canvas></td>
                                     </tr>
-                                     <!-- Patient 4 -->
-                                     <tr>
+                                    <!-- Patient 4 -->
+                                    <tr>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <div class="avatar-circle me-3 bg-secondary">PA</div>
@@ -192,25 +202,30 @@
 
                 <!-- Right Column: Control Center (35%) -->
                 <div class="col-lg-4">
-                    
+
                     <!-- Selected Patient Control -->
                     <div class="card p-4 mb-4 bg-purple text-white position-relative overflow-hidden">
                         <div class="position-relative z-1">
                             <h5 class="mb-4">Active Session</h5>
                             <div class="d-flex align-items-center mb-4">
-                                <div class="bg-white text-purple rounded-circle d-flex justify-content-center align-items-center me-3" style="width: 60px; height: 60px; font-weight: bold; font-size: 1.5rem;">VN</div>
+                                <div class="bg-white text-purple rounded-circle d-flex justify-content-center align-items-center me-3"
+                                    style="width: 60px; height: 60px; font-weight: bold; font-size: 1.5rem;">VN</div>
                                 <div>
                                     <h3 class="mb-0 fw-bold">Vo Van Na</h3>
                                     <span class="badge bg-danger">Critical Alert</span>
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <a href="consultation.php" class="btn btn-light text-purple fw-bold shadow-sm"><i class="fa-solid fa-video me-2"></i> Start Consultation</a>
-                                <button class="btn btn-outline-light"><i class="fa-solid fa-message me-2"></i> Send Message</button>
+                                <a href="consultation.php?role=doctor"
+                                    class="btn btn-light text-purple fw-bold shadow-sm"><i
+                                        class="fa-solid fa-video me-2"></i> Start Consultation</a>
+                                <button class="btn btn-outline-light"><i class="fa-solid fa-message me-2"></i> Send
+                                    Message</button>
                             </div>
                         </div>
                         <!-- Decorative circle -->
-                        <div class="position-absolute bottom-0 end-0 translate-middle-y rounded-circle bg-white opacity-10" style="width: 150px; height: 150px; margin-right: -40px;"></div>
+                        <div class="position-absolute bottom-0 end-0 translate-middle-y rounded-circle bg-white opacity-10"
+                            style="width: 150px; height: 150px; margin-right: -40px;"></div>
                     </div>
 
                     <!-- Alerts Panel -->
@@ -219,7 +234,7 @@
                             <h5 class="fw-bold mb-0">Alerts</h5>
                             <span class="badge bg-danger rounded-pill">3 New</span>
                         </div>
-                        
+
                         <div class="alert-item critical">
                             <div class="d-flex justify-content-between">
                                 <strong class="text-danger">BP Spike Detected</strong>
@@ -238,7 +253,7 @@
                             <button class="btn btn-sm btn-outline-warning py-0 mt-1">Remind</button>
                         </div>
 
-                         <div class="alert-item behavior">
+                        <div class="alert-item behavior">
                             <div class="d-flex justify-content-between">
                                 <strong class="text-warning">Low Activity</strong>
                                 <small class="text-muted">2h ago</small>
@@ -256,7 +271,8 @@
                                     <strong>Dr. Nguyen</strong>
                                     <small class="text-muted">2h ago</small>
                                 </div>
-                                <p class="small text-muted mb-0">Adjusted dosage for Patient #892. Monitoring response.</p>
+                                <p class="small text-muted mb-0">Adjusted dosage for Patient #892. Monitoring response.
+                                </p>
                             </li>
                             <li>
                                 <div class="d-flex justify-content-between mb-1">
@@ -289,7 +305,7 @@
     function drawSpark(id, data, color) {
         new Chart(document.getElementById(id), {
             type: 'line',
-            data: { labels: [1,2,3,4,5,6], datasets: [{ data: data, borderColor: color, fill: false, tension: 0.4 }] },
+            data: { labels: [1, 2, 3, 4, 5, 6], datasets: [{ data: data, borderColor: color, fill: false, tension: 0.4 }] },
             options: commonOptions
         });
     }
