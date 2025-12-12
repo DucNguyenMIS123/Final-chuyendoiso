@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Roboto:wght@400;500;700&family=Inter:wght@300;400;600&display=swap');
+
+:root {
+    --teladoc-purple: #6C2BD9;
+    --teladoc-purple-dark: #622D97;
+    /* From Figma */
+    --teladoc-text-dark: #362065;
+    /* From Figma Headers */
+    --risk-high: #D62828;
+    --risk-med: #F2C94C;
+    --risk-low: #27AE60;
+    --bg-light: #F8F9FA;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-light);
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Noto Serif', serif;
+    color: var(--teladoc-text-dark);
+}
+
+.bg-purple {
+    background-color: var(--teladoc-purple) !important;
+    color: white;
+}
+
+.text-purple {
+    color: var(--teladoc-purple) !important;
+}
+
+.text-purple-dark {
+    color: var(--teladoc-text-dark) !important;
+}
+
+.btn-purple {
+    background-color: var(--teladoc-purple);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.btn-purple:hover {
+    background-color: var(--teladoc-purple-dark);
+    color: white;
+}
+
+.card {
+    border: none;
+    border-radius: 20px;
+    /* From Figma: 30px is simpler as 20px for web */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background: white;
+}
+
+.nav-link {
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    padding: 12px 20px;
+}
+
+.nav-link.active {
+    background-color: #F3E8FF;
+    color: var(--teladoc-purple-dark);
+    font-weight: 700;
+    border-radius: 12px;
+}
+
+.sidebar {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    border-right: 1px solid #E5E7EB;
+    background: white;
+    padding-top: 2rem;
+}
+
+/* Specific Component Styles */
+.risk-card {
+    transition: transform 0.2s;
+}
+
+.risk-card:hover {
+    transform: translateY(-2px);
+}
+
+.avatar-circle {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    color: white;
+}
+
+.table-vitals thead th {
+    font-family: 'Roboto', sans-serif;
+    color: #888;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.table-vitals tbody td {
+    vertical-align: middle;
+    padding: 16px 8px;
+    font-weight: 500;
+}
+
+.alert-item {
+    border-left: 4px solid transparent;
+    padding: 12px;
+    background: #FAFAFA;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.alert-item.critical {
+    border-left-color: var(--risk-high);
+    background: #FEF2F2;
+}
+
+.alert-item.behavior {
+    border-left-color: var(--risk-med);
+    background: #FFFBEB;
+}
+
+.alert-item.info {
+    border-left-color: var(--teladoc-purple);
+    background: #F3E8FF;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
